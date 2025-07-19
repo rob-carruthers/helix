@@ -4,6 +4,7 @@ theme = "nordic"
 end-of-line-diagnostics = "hint"
 line-number = "relative"
 mouse = false
+bufferline = "always"
 
 [editor.cursor-shape]
 insert = "bar"
