@@ -1,0 +1,17 @@
+theme = "nordic"
+
+[editor]
+end-of-line-diagnostics = "hint"
+line-number = "relative"
+mouse = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+[editor.inline-diagnostics]
+cursor-line = "warning"
+other-lines = "disable"
+
+[editor.file-picker]
+hidden = false
