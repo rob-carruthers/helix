@@ -17,3 +17,6 @@ other-lines = "disable"
 
 [editor.file-picker]
 hidden = false
+
+[keys.normal]
+"space" = { "A" = {"p" = ":pipe /home/rob/.config/helix/scripts/helix_relative_path.py"}}
