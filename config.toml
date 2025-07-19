@@ -19,6 +19,6 @@ other-lines = "disable"
 hidden = false
 
 [keys.normal]
-"space" = { "A" = {"p" = ":pipe /home/rob/.config/helix/scripts/helix_relative_path.py"}}
+"space" = { "A" = {"p" = ":pipe python /home/rob/.config/helix/scripts/helix_relative_path.py"}}
 "A-pagedown" = ":buffer-next"
 "A-pageup" = ":buffer-previous"
