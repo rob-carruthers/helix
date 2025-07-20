@@ -65,6 +65,7 @@
 "ui.menu.scroll" = { fg = "gray4", bg = "gray0" }          # fg sets thumb color, bg sets track color of scrollbar
 "ui.selection" = { bg = "gray2" }
 "ui.cursorline.primary" = { bg = "gray1" }
+"ui.virtual.indent-guide" = { fg = "gray5" }
 
 # Diagnostic Messages
 "error" = { fg = "red_base" }
