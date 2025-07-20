@@ -51,8 +51,8 @@
 "ui.cursor" = { fg = "black1", bg = "gray4" }
 "ui.cursor.primary" = { fg = "black1", bg = "white0" }
 "ui.cursor.match" = { modifiers = ["bold"] }
-"ui.linenr" = { fg = "gray2" }
-"ui.linenr.selected" = { fg = "gray4" }
+"ui.linenr" = { fg = "gray5" }
+"ui.linenr.selected" = { fg = "white0" }
 "ui.statusline" = { fg = "white0", bg = "black0" }
 "ui.statusline.inactive" = { fg = "gray4", bg = "black0" }
 "ui.popup" = { bg = "black1" }
