@@ -22,3 +22,10 @@ hidden = false
 "space" = { "A" = {"p" = ":pipe python /home/rob/.config/helix/scripts/helix_relative_path.py"}}
 "A-pagedown" = ":buffer-next"
 "A-pageup" = ":buffer-previous"
+
+[keys.normal.space.space.b.q.n]
+"a" = ":pipe python /home/rob/.config/helix/scripts/helix_build_query_call.py --db 'n'"
+"o" = ":pipe python /home/rob/.config/helix/scripts/helix_build_query_call.py --db 'n' --as-polars"
+[keys.normal.space.space.b.q.m]
+"a" = ":pipe python /home/rob/.config/helix/scripts/helix_build_query_call.py --db 'm'"
+"o" = ":pipe python /home/rob/.config/helix/scripts/helix_build_query_call.py --db 'm' --as-polars"
