@@ -26,7 +26,7 @@
 "function.macro" = { fg = "red_base" }
 "tag" = { fg = "blue1" }
 "namespace" = { fg = "yellow_dim" }
-"special" = { fg = "orange_base" } # fuzzy highlight (picker)
+"special" = { fg = "orange_base" }                                 # fuzzy highlight (picker)
 
 # Markup Formatting
 "markup.heading.1" = { fg = "yellow_base", modifiers = ["bold"] }
@@ -62,7 +62,7 @@
 "ui.virtual.ruler" = { bg = "gray1" }
 "ui.menu" = { bg = "black1" }
 "ui.menu.selected" = { bg = "gray4" }
-"ui.menu.scroll" = { fg = "gray4", bg = "gray0" } # fg sets thumb color, bg sets track color of scrollbar
+"ui.menu.scroll" = { fg = "gray4", bg = "gray0" }          # fg sets thumb color, bg sets track color of scrollbar
 "ui.selection" = { bg = "gray2" }
 "ui.cursorline.primary" = { bg = "gray1" }
 
