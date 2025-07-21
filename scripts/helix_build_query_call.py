@@ -15,7 +15,7 @@ def build_query_call(query_string: str, db: str, as_polars: bool):
     if as_polars:
         base_query += ", as_polars=True"
 
-    sql_vars = re.findall(r":[a-zA-Z0-9_]+\b", query_string, flags=re.M)
+    sql_vars: list[str] = re.findall(r":[a-zA-Z0-9_]+\b", query_string, flags=re.M)
     for sql_var in sql_vars:
         base_query += f", {sql_var[1:]}={sql_var[1:]}"
     base_query += ")"
@@ -53,8 +53,8 @@ if __name__ == "__main__":
     _ = parser.add_argument("-d", "--db")
     _ = parser.add_argument("-o", "--as-polars", action="store_true")
     args = parser.parse_args()
-    assert isinstance(args.db, str)
-    assert isinstance(args.as_polars, bool)
+    assert isinstance(args.db, str)  # pyright: ignore [reportAny]
+    assert isinstance(args.as_polars, bool)  # pyright: ignore [reportAny]
 
     input_string = "".join(sys.stdin)
     if not is_valid_sql_query(input_string):
