@@ -11,7 +11,7 @@ def is_valid_sql_query(input_string: str) -> bool:
 
 
 def build_query_call(query_string: str, db: str, as_polars: bool):
-    base_query = f'df = query_to_df("{db}"'
+    base_query = f'df = query_to_df("{db}, query"'
     if as_polars:
         base_query += ", as_polars=True"
 
