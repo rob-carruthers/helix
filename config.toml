@@ -9,6 +9,7 @@ rulers = [100]
 cursorline = true
 popup-border = "all"
 auto-pairs = false
+jump-label-alphabet = "dfghjkieruwonvls"
 
 [editor.cursor-shape]
 insert = "bar"
