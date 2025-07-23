@@ -66,6 +66,7 @@
 "ui.selection" = { bg = "gray2" }
 "ui.cursorline.primary" = { bg = "gray1" }
 "ui.virtual.indent-guide" = { fg = "gray5" }
+"ui.virtual.jump-label" = { fg = "orange_dim", modifiers = ["bold", "italic"] }
 
 # Diagnostic Messages
 "error" = { fg = "red_base" }
