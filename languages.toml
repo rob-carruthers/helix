@@ -10,6 +10,8 @@ formatter = { command = "ruff", args = [
   "format",
   "--stdin-filename",
   "temp.py",
+  "--line-length",
+  "100",
   "-",
 ] }
 auto-format = true
