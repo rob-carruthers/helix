@@ -9,7 +9,8 @@ args = ["--snippets", "~/.config/helix/snippets.toml"]
 
 [[language]]
 name = "python"
-language-servers = ["basedpyright", "helix-snippets-ls"]
+# language-servers = ["basedpyright", "helix-snippets-ls"]
+language-servers = ["ty", "ruff", "helix-snippets-ls"]
 formatter = { command = "ruff", args = [
   "format",
   "--stdin-filename",
@@ -20,6 +21,18 @@ formatter = { command = "ruff", args = [
 ] }
 auto-format = true
 
+[language-server.ty]
+command = "ty"
+args = ["server"]
+
+[language-server.ty.config]
+experimental.rename = true
+
 [[language]]
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
+
+[[language]]
+name = "rust"
+auto-format = true
+
