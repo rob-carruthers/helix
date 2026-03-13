@@ -10,6 +10,7 @@ cursorline = true
 popup-border = "all"
 auto-pairs = false
 jump-label-alphabet = "dfghjkieruwonvls"
+rainbow-brackets = true
 
 [editor.cursor-shape]
 insert = "bar"
