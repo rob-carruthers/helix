@@ -13,7 +13,7 @@
 "constant.character.escape" = { fg = "magenta_bright" }
 "string" = { fg = "green_base" }
 "string.regex" = { fg = "magenta_bright" }
-"comment" = { fg = "gray4", modifiers = ["italic"] }
+"comment" = { fg = "gray5", modifiers = ["italic"] }
 "variable" = { fg = "white0" }
 "variable.builtin" = { fg = "blue0" }
 "variable.other.member" = { fg = "cyan_bright" }
