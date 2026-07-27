@@ -3,6 +3,11 @@ name = "markdown"
 formatter = { command = "dprint", args = ["fmt", "--stdin", "md"]}
 auto-format = true
 
+[[language]]
+name = "yaml"
+formatter = { command = "yamlfmt", args = ["-"]}
+auto-format = true
+
 [language-server.helix-snippets-ls]
 command = "helix-snippets-ls"
 args = ["--snippets", "~/.config/helix/snippets.toml"]
