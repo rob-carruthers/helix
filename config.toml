@@ -1,6 +1,7 @@
 theme = "nordic"
 
 [editor]
+clipboard-provider = "wayland"
 end-of-line-diagnostics = "hint"
 line-number = "relative"
 mouse = false
