@@ -47,7 +47,8 @@ check.command = "clippy"
 [[language]]
 name = "nix"
 auto-format = true
-formatter = { command = "nixfmt" }
+language-servers = [ "nil" ]
+formatter = { command = "nixfmt -" }
 
 [[language]]
 name = "lua"
