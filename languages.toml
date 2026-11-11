@@ -53,3 +53,16 @@ formatter = { command = "nixfmt -" }
 [[language]]
 name = "lua"
 auto-format = true
+
+[language-server.sclang-lsp]
+command = "sclang-lsp"
+
+
+[[language]]
+name = "supercollider"
+scope = "source.supercollider"
+file-types = ["sc", "scd"]
+comment-token = "//"
+language-servers = ["sclang-lsp"]
+auto-format = true
+indent = { tab-width = 2, unit = "  " }
