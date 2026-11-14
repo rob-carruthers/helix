@@ -40,6 +40,10 @@ separator = "|"
 "A-pagedown" = ":buffer-next"
 "A-pageup" = ":buffer-previous"
 "A-w" = ":buffer-close"
+# Evaluate current line (Alt + Enter)
+"A-ret" = ["extend_to_line_bounds", ":pipe-to /home/rob/code/spektr/scripts/hx-repl.sh"]
+# Panic / Cmd-. equivalent to stop all sound (Alt + .)
+"A-." = ":sh tmux send-keys -t {right-of} 'CmdPeriod.run' C-m"
 
 [keys.normal.space.space]
 "a" = { "p" = ":pipe python /home/rob/.config/helix/scripts/helix_relative_path.py" }
@@ -50,3 +54,9 @@ separator = "|"
 [keys.normal.space.space.b.q.m]
 "a" = ":pipe python /home/rob/.config/helix/scripts/helix_build_query_call.py --db 'm'"
 "o" = ":pipe python /home/rob/.config/helix/scripts/helix_build_query_call.py --db 'm' --as-polars"
+
+[keys.select]
+# Evaluate your manual selection (Alt + Enter)
+"A-ret" = ":pipe-to /home/rob/code/spektr/scripts/hx-repl.sh"
+# Panic / Cmd-. equivalent in Select mode too (Alt + .)
+"A-." = ":sh tmux send-keys -t {right-of} 'CmdPeriod.run' C-m"
